@@ -6,11 +6,8 @@ const inputField = document.querySelector("input"),
 
 let api;
 
-// console.log(weatherImg);
-
 inputField.addEventListener("keyup", (e) => {
   const inputLen = e.target.value.length;
-  // console.log(inputLen);
   if (e.key == "Enter" && inputField.value != "") {
     requestApi(inputField.value);
   } else if (inputLen === 0 && !inputField.value) {
